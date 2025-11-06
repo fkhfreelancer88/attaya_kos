@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attaya Kos</title>
+  <meta name="description" content="Attaya Kos">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Attaya Kos</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kamar">Kamar Kami</a></li>
+        <li class="nav-item"><a class="btn" href="#contact">Hubungi Kami</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section dengan Carousel di bawah CTA -->
+<section id="home" class="hero vh-100 d-flex align-items-center">
+  <div class="container text-center text-white">
+    <!-- Headline + Subheadline -->
+    <h1 class="display-4 fw-bold mb-3">
+      Kenyamanan beristirahat di tengah kota
+    </h1>
+    <p class="lead mb-4">
+      Attaya Kos menyediakan ruang untuk anda berkembang dan beristirahat dengan nyaman dan aman.
+    </p>
+
+    <!-- CTA Buttons -->
+    <a href="#kamar" class="btn btn-success btn-lg me-2 rounded-pill">Kamar Kami</a>
+    <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill">Hubungi Kami</a>
+
+    <!-- Carousel langsung di bawah CTA -->
+    <div id="whyCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+      <div class="carousel-inner p-4 rounded shadow text-dark">
+
+        <div class="carousel-item active">
+          <h3 class="fw-semibold text-success">Lokasi Strategis</h3>
+          <p>Dekat dengan pusat bisnis dan transportasi.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="fw-semibold text-success">Kamar Fleksibel</h3>
+          <p>Cocok untuk berbagai kebutuhan.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="fw-semibold text-success">Harga Terjangkau</h3>
+          <p>Bersaing dan transparan.</p>
+        </div>
+
+        <div class="carousel-item">
+          <h3 class="fw-semibold text-success">Lingkungan Nyaman</h3>
+          <p>Tenang dan aman untuk berkembang.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kamar Kami -->
+<section id="kamar" class="py-5 bg-light">
+  <div style="height:100px"></div>
+  <div class="container">
+    <h2 class="text-center mb-5">Kamar Kami</h2>
+    <div class="row g-4">
+      <!-- Kamar 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kamar 1</h5>
+            <p class="text-danger fw-bold">Status: Terisi</p>
+          </div>
+          <div id="room1Carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Gambar -->
+              <div class="carousel-item active">
+                <img src="assets/img/kamar1_1.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar1_2.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar1_3.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar1_4.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <!-- Video -->
+              <div class="carousel-item">
+                <video class="d-block w-100 rounded" controls>
+                  <source src="assets/vid/kamar1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- Navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#room1Carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#room1Carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>          
+        </div>
+      </div>
+      
+      <!-- Kamar 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kamar 2</h5>
+            <p class="text-danger fw-bold">Status: Terisi</p>
+          </div>
+          <div id="room2Carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Gambar -->
+              <div class="carousel-item active">
+                <img src="assets/img/kamar2_1.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar2_2.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar2_3.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar2_4.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar2_5.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <!-- Video -->
+              <div class="carousel-item">
+                <video class="d-block w-100 rounded" controls>
+                  <source src="assets/vid/kamar2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- Navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#room2Carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#room2Carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>          
+        </div>
+      </div>
+
+      <!-- Kamar 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kamar 3</h5>
+            <p class="text-success fw-bold">Status: Tersedia</p>
+          </div>
+          <div id="room3Carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Gambar -->
+              <div class="carousel-item active">
+                <img src="assets/img/kamar3_1.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar3_2.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar3_3.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar3_4.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar3_5.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <!-- Video -->
+              <div class="carousel-item">
+                <video class="d-block w-100 rounded" controls>
+                  <source src="assets/vid/kamar3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- Navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#room3Carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#room3Carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>          
+        </div>
+      </div>
+
+      <!-- Kamar 4 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kamar 4</h5>
+            <p class="text-danger fw-bold">Status: Terisi</p>
+          </div>
+          <div id="room4Carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Gambar -->
+              <div class="carousel-item active">
+                <img src="assets/img/kamar4_1.jpg" class="d-block w-100 h-250 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar4_2.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar4_3.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar4_4.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar4_5.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar4_6.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <!-- Video -->
+              <div class="carousel-item">
+                <video class="d-block w-100 rounded" controls>
+                  <source src="assets/vid/kamar4.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- Navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#room4Carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#room4Carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>          
+        </div>
+      </div>
+
+      <!-- Kamar 5 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kamar 5</h5>
+            <p class="text-success fw-bold">Status: Tersedia</p>
+          </div>
+          <div id="room5Carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Gambar -->
+              <div class="carousel-item active">
+                <img src="assets/img/kamar5_1.jpg" class="d-block w-100 h-250 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar5_2.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar5_3.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar5_4.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar5_5.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar5_6.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar5_7.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/kamar5_8.jpg" class="d-block w-100 rounded" alt="Kamar 1">
+              </div>
+              <!-- Video -->
+              <div class="carousel-item">
+                <video class="d-block w-100 rounded" controls>
+                  <source src="assets/vid/kamar5.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <!-- Navigasi -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#room5Carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#room5Carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>          
+        </div>
+      </div>
+
+      <!-- Fasilitas -->
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Fasilitas</h5>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <h6 class="fw-semibold">⚡Listrik dan air ( tanpa AC)</h6>
+              <h6 class="fw-semibold">🛏️ Kamar tidur pribadi</h6>
+              <h6 class="fw-semibold">🛁 Kamar mandi pribadi</h6>
+              <h6 class="fw-semibold">🍳 Dapur pribadi</h6>
+              <h6 class="fw-semibold">🛋️ Ruang keluarga/tamu pribadi</h6>
+            </div>
+          </div>            
+        </div>
+      </div>
+      <!-- Tambahkan Kamar 3, 4, 5 dengan pola sama -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Hubungi Kami</h2>
+    <div class="row">
+
+      <!-- Kolom kiri: WhatsApp -->
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+        <h4 class="mb-3">Hubungi via WhatsApp</h4>
+        <p class="mb-4">Klik tombol di bawah untuk langsung chat dengan kami.</p>
+        <a href="https://wa.me/628117713325" target="_blank" 
+           class="btn btn-success btn-lg rounded-pill">
+          <i class="bi bi-whatsapp"></i> Chat WhatsApp
+        </a>
+      </div>
+
+      <!-- Kolom kanan: Map -->
+      <div class="col-md-6">
+        <h4 class="mb-3 text-center">Lokasi Kami</h4>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.31413239604643!2d104.1194822287902!3d1.1417899745874793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98780f52526c3%3A0x6829d3e1db9177d8!2sKharisma%20Kos!5e0!3m2!1sid!2sid!4v1762403856365!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-light text-center border-top">
+  <p class="mb-0 text-muted">© <span id="year"></span> 2025 AB IT Services</p>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

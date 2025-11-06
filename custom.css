@@ -1,0 +1,133 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2ecc71; /* hijau */
+}
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+}
+.navbar .nav-link {
+  color: #fff ;
+  margin-left: 1rem;
+}
+.navbar .nav-link:hover {
+  color: #dfffe8 ; /* hijau muda saat hover */
+}
+.navbar .btn {
+  background-color: #fff;
+  color: #2ecc71;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.navbar .btn:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../assets/img/hero.png'); /* ganti dengan path gambar hero */
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* overlay gelap agar teks lebih jelas */
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.hero .btn {
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+}
+
+/* Carousel di Hero */
+#whyCarousel {
+  max-width: 400px;   /* batasi lebar carousel */
+  max-height: 100px;  /* batasi tinggi carousel */
+  margin: 10% auto 10%;  /* posisikan di tengah dengan jarak */
+  background: rgba(255, 255, 255, 0.6); /* putih 50% transparan */
+  border-radius: 15px;
+}
+
+#whyCarousel h3 {
+  font-size: 1.25rem; /* lebih kecil dari default */
+  font-weight: 600;
+  color: #2ecc71;
+  margin-bottom: 0.5rem;
+}
+
+#whyCarousel p {
+  font-size: 0.95rem; /* teks lebih kecil */
+  color: #555;
+  margin: 0;
+}
+
+/* Services Section */
+#kamar h2 {
+  color: #2ecc71;
+  font-weight: 700;
+}
+#kamar .card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+#kamar .card:hover {
+  transform: translateY(-5px);
+}
+
+#kamar img,
+#kamar video {
+  width: 100%;          /* penuh mengikuti lebar card */
+  height: 600px;        /* tinggi tetap */
+  object-fit: cover;    /* isi penuh tanpa distorsi, crop kalau perlu */
+  border-radius: 8px;   /* opsional, biar sudut rounded */
+}
+
+
+/* Contact Section */
+#contact h2 {
+  color: #2ecc71;
+  font-weight: 700;
+}
+#contact .btn {
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background-color: #2ecc71;
+  color: #fff;
+}
+footer p {
+  margin: 0;
+}
